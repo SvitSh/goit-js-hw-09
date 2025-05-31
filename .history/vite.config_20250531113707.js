@@ -6,11 +6,11 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
+    base: '/goit-js-hw-09/', // ✅ вот эта строка — добавь
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
     root: 'src',
-    base: '/goit-js-hw-09/',
     build: {
       sourcemap: true,
       rollupOptions: {
